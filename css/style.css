@@ -1,0 +1,279 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-color: #1d1d1d;
+	margin: 0 auto;
+	padding: 0;
+	font-family: Verdana, Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #333;
+	width: 1100px;
+}
+
+h1 {
+
+}
+a {
+	color: #666;
+	text-decoration: none;
+	border-bottom: 1px dashed #000;
+}
+a:hover, .r:hover {
+	cursor: pointer;
+	color: #aaa;
+	border-bottom: 1px dashed #666;
+}
+
+a.external_link {
+	color: #0645AD;
+	text-decoration: none;
+	border-bottom: 0px;
+
+}
+a.external_link:hover {
+	background-color: transparent;
+	border-bottom: 1px dashed #0645AD;
+}
+
+.counter {
+	float: left;
+	width: 150px;
+}
+.counter ul {
+	list-style: none;
+	padding: 0;
+}
+
+.counter ul li {
+	border-radius: 10px 0px 0px 10px;
+	padding: 10px 0px 10px 5px;
+	margin: 5px 0 5px 0;
+	background-color: white;
+	font-size: 12px;
+}
+.counter ul li.winner {
+	background-color: gold;
+}
+
+#container {
+	background-color: #fff;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+span.nsfw {
+	color: red;
+}
+span.reset-eggs {
+	border-bottom: 1px dashed #000;
+}
+
+#menu {
+	z-index: 4;
+	width: 220px;
+	float: right;
+	margin: 0px;
+	margin-top: 50px;
+	height: 600px;
+}
+	#menu h2 {
+		padding: 0px;
+		margin: 0px;
+	}
+	#menu ul {
+		font-size: 20px;
+		font-weight: bold;
+		margin: 5px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 0px;
+	}
+	#menu ul li {
+		list-style-type: none;
+		padding: 2px;
+		margin: 0px;
+		margin-left: 10px;
+	}
+	#menu ul li.nsfw {
+		cursor: pointer;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 17px;
+		color: black;
+		background-color: black;
+	}
+	#menu ul li.nsfw span {
+		color: red;
+	}
+	#menu ul li.nsfw a {
+		color: black;
+	}
+	#menu ul li.nsfw {
+		background-color: black;
+	}
+
+	#menu ul li:hover {
+		background-color: #e9e9e9;
+	}
+
+	#menu ul li.active {
+		background-color: #e9e9e9;
+	}
+	#menu ul li.active a {
+		color: #aaa;
+		background-color: #e9e9e9;
+	}
+
+	#menu div.qr {
+		text-align:center;
+		margin-top: 50px;
+		margin-left: -6px;
+	}
+
+#content {
+	position: relative;
+	z-index: 10;
+	border-right: 1px solid #666;
+	margin-right: 225px;
+	height: 700px;
+	background-color: #fff;
+}
+
+#content div.product {
+	display: none;
+	margin: 5px;
+	padding: 10px;
+	height: 600px;
+}
+	#content div.product ul {
+		margin: 0px;
+		margin-left: 5px;
+		padding: 0px;
+	}
+	#content div.product ul li {
+		margin: 0px;
+		padding: 0px;
+		padding-left: 40px;
+		list-style-type: none;
+	}
+
+	#content div.product h2 {
+		padding: 0px;
+		margin: 0px;
+	}
+	#content div.product h2 span.small_text {
+		font-size: 16px;
+		font-weight: normal;
+	}
+	#content div.product p {
+		padding: 0px;
+		margin: 0px;
+		margin-top: 5px;
+		padding-left: 20px;
+	}
+	#content div.product p.url {
+		text-align: right;
+		padding: 0px;
+		margin: 10px;
+		padding-bottom: 2px;
+
+	}
+
+	#content div.product p.description {
+		font-size: 14px;
+		padding: 0px;
+		margin: 10px;
+		margin-left: 20px;
+		padding-bottom: 2px;
+	}
+
+	#content div.product p.duties {
+		color: #6f6f6f;
+		font-size: 14px;
+		font-style: italic;
+	}
+
+	#content div.product div.screenshot {
+		margin: 0 auto;
+
+		width: 550px;
+		height: 344px;
+		margin-bottom: 10px;
+	}
+
+	#content div.product div.screenshot a img {
+		border: 0px;
+	}
+	#content div.product div.screenshot a {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+	#content div.product div.screenshot a:hover {
+		background-color: #fff;
+		border-top: 1px solid #666;
+	}
+	#content div.product div.me {
+		margin: 0 auto;
+		border: 1px solid #666;
+		width: 550px;
+		height: 344px;
+		background-image: url('/images/profile.me.jpg');
+		background-repeat: no-repeat;
+		background-position: 0px 45px;
+	}
+#footer {
+	clear: both;
+	border-top: 1px solid #666;
+}
+	#footer p {
+		padding: 2px;
+		padding-left: 20px;
+		margin-top: 0px;
+	}
+
+#extra_footer {
+	margin-bottom: 20px;
+}
+
+#chris {
+	z-index: 5;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	margin-left: -80px;
+	background-image: url('/images/chris.png');
+	background-repeat: no-repeat;
+	width: 210px;
+	height: 178px;
+}
+
+#chris div.says {
+	display: none;
+	font-size: 12px;
+	padding-top: 20px;
+	padding-left: 80px;
+}
+
+#chris div.quote {
+	display: none;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-left: 80px;
+	text-align: center;
+}
+#chris div.bye {
+	display: none;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-left: 80px;
+	text-align: center;
+}
+.misspelling {
+	cursor: default;
+	border-bottom: 1px dashed #666;
+}
+
+.no_js {
+	display: none;
+}
