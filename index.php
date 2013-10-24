@@ -17,9 +17,7 @@ if(isset($_POST['j']) && $_POST['j']) {
     mysql_select_db($dbname);
 
     mysql_query($sql) or die('holy bananas batman! i just died because: ' . mysql_error());
-    echo 'i have collected many things';
     die();
-
 }
 ?>
 <!DOCTYPE html >
