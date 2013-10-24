@@ -185,7 +185,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='description'>
                         Zeph created <a class='external_link' href='http://deitweet.com'>Deitweet.com</a> (dee-i-tweet) as a knee jerk reaction to cursebird.com.
                         Deitweet filters for major deity names, similar to the way cursebird pulls tweets with swear words.
-                        Like most of Zeph’s side projects, this is simply a fun time waster.
+                        Like most of Zephï¿½s side projects, this is simply a fun time waster.
                         Although it features ads, it makes no money.
                     </p>
                     <p class='url'><a href='http://deitweet.com' class='external_link'>http://deitweet.com</a></p>
@@ -221,7 +221,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='description'>Kinky Dollars is an adult entertainment affiliate program for <a class="external_link" href="http://www.kink.com/">[<span class='nsfw'>nsfw</span>] Kink.com</a> </p>
                     <p class="url">[<span class='nsfw'>nsfw</span>] <a href="http://www.kinkydollars.com">http://www.kinkydollars.com/</a></p>
                     <p class='duties'>
-                        Zeph rewrote the entire backend for the affiliate ad tools. Zeph also used the <abbr title="alternitive php caching">APC</abbr> library to help with performance. Zeph was not responible for the crummy UI.
+                        Zeph rewrote the entire backend for the affiliate ad tools. Zeph also used the <abbr title="alternitive php caching">APC</abbr> library to help with performance. Zeph was not responsible for the crummy UI.
                     </p>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
