@@ -203,10 +203,9 @@ if(isset($_POST['j']) && $_POST['j']) {
                     </div>
                     <p class='description'>
                         Win A Dollar is an simple online game in which users try to pick the winning square.
-                        This is another project co-produced with Chris Contolini.
                         Although this application will not give you a dollar, it's still fun to play a few rounds.
                     </p>
-                    <p class='url'><a href='http://zeph.lafassett.com/dollar' class='external_link'>http://zeph.lafassett.com/dollar</a></p>
+                    <p class='url'><a href='http://dollar.lafassett.com' class='external_link'>http://dollar.lafassett.com</a></p>
                     <p class='duties'>
                         Zeph was responsible for the database design, UX, frontend and backend development, and that horrible pink background.
                     </p>
