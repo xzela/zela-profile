@@ -81,6 +81,7 @@ function fetch_eggs() {
 function clear_eggs() {
     if(!supports()) { return false; }
     localStorage.clear();
+    $(".counter ul").empty();
 }
 
 function add_egg(egg) {
