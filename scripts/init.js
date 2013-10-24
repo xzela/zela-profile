@@ -113,7 +113,7 @@ $(document).ready(function() {
         });
     });
 
-    $('.reset-eggs').bind('click', function() {
+    $('.reset-eggs').live('click', function() {
         clear_eggs();
         $('.counter ul').empty();
     });
