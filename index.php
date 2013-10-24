@@ -185,7 +185,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='description'>
                         Zeph created <a class='external_link' href='http://deitweet.com'>Deitweet.com</a> (dee-i-tweet) as a knee jerk reaction to cursebird.com.
                         Deitweet filters for major deity names, similar to the way cursebird pulls tweets with swear words.
-                        Like most of Zeph�s side projects, this is simply a fun time waster.
+                        Like most of Zeph's side projects, this is simply a fun time waster.
                         Although it features ads, it makes no money.
                     </p>
                     <p class='url'><a href='http://deitweet.com' class='external_link'>http://deitweet.com</a></p>
