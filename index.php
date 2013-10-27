@@ -217,7 +217,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <div class='screenshot'>
                         <img src='images/screenshots/kinkydollars.png' alt='project mango screenshot' />
                     </div>
-                    <p class='description'>Kinky Dollars is an adult entertainment affiliate program for <a class="external_link" href="http://www.kink.com/">[<span class='nsfw'>nsfw</span>] Kink.com</a> </p>
+                    <p class='description'>Kinky Dollars is an adult entertainment affiliate program for [<span class='nsfw'>nsfw</span>] <a class="external_link" href="http://www.kink.com/">Kink.com</a> </p>
                     <p class="url">[<span class='nsfw'>nsfw</span>] <a href="http://www.kinkydollars.com">http://www.kinkydollars.com/</a></p>
                     <p class='duties'>
                         Zeph rewrote the entire backend for the affiliate ad tools. Zeph also used the <abbr title="alternitive php caching">APC</abbr> library to help with performance. Zeph was not responsible for the crummy UI.
