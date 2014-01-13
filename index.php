@@ -80,10 +80,18 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <li><a href="#aboutzeph">About Zeph</a></li>
 
                 </ul>
-                <div class='qr'>
+                <div class="extra">
+                    <h4>Extra:</h4>
+                    <ul>
+                        <li>Github: <a class="external_link" href="https://github.com/xzela">github.com/xzela</a></li>
+                        <li>Resume: <a href="/files/Zeph_LaFassett_Resume.pdf" />download</a> [PDF]</li>
+                        <li>Email: <a href="mailto:zeph@lafassett.com" >zeph@lafassett.com</a></li>
+                    </ul>
+                </div>
+<!--                 <div class='qr'>
                     <img src='images/qr.zeph.lafassett.small.effect.png' alt='qr bar-code' title='scan this with your barcode reader' />
                 </div>
-                <div id='chris'>
+ -->                <div id='chris'>
                     <div class='says'><a href='http://en.wikipedia.org/wiki/Chris_Hansen' class='external_link'><strong>Chris Hansen</strong></a> says</div>
                     <div class='quote'></div>
                     <div class='bye'></div>
@@ -186,7 +194,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                         Zeph created <a class='external_link' href='http://deitweet.com'>Deitweet.com</a> (dee-i-tweet) as a knee jerk reaction to cursebird.com.
                         Deitweet filters for major deity names, similar to the way cursebird pulls tweets with swear words.
                         Like most of Zeph's side projects, this is simply a fun time waster.
-                        Although it features ads, it makes no money.
+                        Although this site once featured ads, it made no money.
                     </p>
                     <p class='url'><a href='http://deitweet.com' class='external_link'>http://deitweet.com</a></p>
                     <p class='duties'>
@@ -234,7 +242,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <ul>
                         <li>loves <a href="http://www.sublimetext.com/2" class='external_link'>sublime text 2</a>.</li>
                         <li>thinks <a href='http://jquery.com' class='external_link'>jquery</a> is cool.</li>
-                        <li>believes <a href='http://codeigniter.com' class='external_link'>codeignter</a> is <span class='misspelling hint' title='Thanks for hovering of this span element. I just wanted to see how many people would actually hover over a dotted underline. By hovering over this span element I have collected your: IP Address, Host Address, DateTime, Session ID, and a few other things. Nothing personal of course, it was just a test.'>teh</span> awesome.</li>
+                        <li>believes <a href='http://nodejs.org' class='external_link'>nodejs</a> is <span class='misspelling hint' title='Thanks for hovering of this span element. I just wanted to see how many people would actually hover over a dotted underline. By hovering over this span element I have collected your: IP Address, Host Address, DateTime, Session ID, and a few other things. Nothing personal of course, it was just a test.'>teh</span> future.</li>
                         <li>holds a bachelor of arts in philosophy and religion from <a href='http://www.sfsu.edu/' class='external_link'> sfsu</a>.</li>
                         <li>wants to raise <a href='http://en.wikipedia.org/wiki/Capybara' class='external_link'>capybaras</a> at some point in the future.</li>
                         <li>has a <a href='/files/Zeph_LaFassett_Resume.pdf'>resume</a>.</li>
@@ -243,7 +251,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                 </div>
                 <div id='footer'>
                     <p>
-                        send Zeph an <a href='mailto:zeph@lafassett.com'>email</a> or give him a call (+1.916.521.4784). I hear he's a really nice <span id='hansen' class='hint'>dude</span>.
+                        send Zeph an <a href='mailto:zeph@lafassett.com'>email</a> or give him a call (<a href="tel:+19165214784">+1.916.521.4784</a>). I hear he's a really nice <span id='hansen' class='hint'>dude</span>.
                     </p>
                 </div>
             </div>
