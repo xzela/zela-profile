@@ -67,7 +67,7 @@ if(isset($_POST['j']) && $_POST['j']) {
         </div>
         <div id='container'>
             <div id='menu'>
-                <h2>P<span class='r'>r</span>ojects:</h2>
+                <h2>P<span class='hint r'>r</span>ojects:</h2>
                 <ul>
                     <li><a href='#welcome'>Welcome</a></li>
                     <li><a href="#langantiques">Lang Antiques</a></li>
@@ -83,15 +83,12 @@ if(isset($_POST['j']) && $_POST['j']) {
                 <div class="extra">
                     <h4>Extra:</h4>
                     <ul>
-                        <li>Github: <a class="external_link" href="https://github.com/xzela">github.com/xzela</a></li>
-                        <li>Resume: <a href="/files/Zeph_LaFassett_Resume.pdf" />download</a> [PDF]</li>
-                        <li>Email: <a href="mailto:zeph@lafassett.com" >zeph@lafassett.com</a></li>
+                        <li><strong>Github</strong>: <a class="external_link" href="https://github.com/xzela">github.com/xzela</a></li>
+                        <li><strong>Resume</strong>: <a href="/files/Zeph_LaFassett_Resume.pdf" />download</a> [PDF]</li>
+                        <li><strong>Email</strong>: <a href="mailto:zeph@lafassett.com" >zeph@lafassett.com</a></li>
                     </ul>
                 </div>
-<!--                 <div class='qr'>
-                    <img src='images/qr.zeph.lafassett.small.effect.png' alt='qr bar-code' title='scan this with your barcode reader' />
-                </div>
- -->                <div id='chris'>
+                <div id='chris'>
                     <div class='says'><a href='http://en.wikipedia.org/wiki/Chris_Hansen' class='external_link'><strong>Chris Hansen</strong></a> says</div>
                     <div class='quote'></div>
                     <div class='bye'></div>
