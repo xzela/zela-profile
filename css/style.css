@@ -227,6 +227,22 @@ span.reset-eggs {
 		background-repeat: no-repeat;
 		background-position: 0 45px;
 	}
+	#content div.product  ul.keywords {
+		font-size: 13px;
+		font-style: italic;
+		margin: 0;
+		margin-left: 40px;
+		padding: 0;
+		list-style-type: none;
+	}
+	#content div.product ul.keywords li {
+		background-color: #eaeaea;
+		border-radius: 3px;
+		display: inline;
+		padding: 3px;
+
+	}
+
 #footer {
 	clear: both;
 	border-top: 1px solid #666;
