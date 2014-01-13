@@ -144,6 +144,16 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='duties'>
                         Zeph was responsible for general UI design, server setup, ssl setup.
                     </p>
+                    <h4>tags</h4><span>[</span>
+                    <ul class="keywords">
+                        <li>nodejs</li>
+                        <li>ssl</li>
+                        <li>grunt</li>
+                        <li>fake site</li>
+                        <li>does not steal credit card information</li>
+                    </ul>
+                    <span>]</span>
+
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
