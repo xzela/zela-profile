@@ -66,12 +66,14 @@ span.reset-eggs {
 }
 
 #menu {
+	position: relative;
 	z-index: 4;
 	width: 220px;
 	float: right;
 	margin: 0;
 	margin-top: 50px;
-	height: 600px;
+	min-height: 600px;
+	height: 650px;
 }
 	#menu h2 {
 		padding: 0;
@@ -240,26 +242,27 @@ span.reset-eggs {
 		border-radius: 3px;
 		display: inline;
 		padding: 3px;
-
 	}
 
-#footer {
-	clear: both;
+.footer {
+	background-color: white;
 	border-top: 1px solid #666;
+	padding-right: 220px;
 }
-	#footer p {
+	.footer p {
 		padding: 2px;
 		padding-left: 20px;
 		margin-top: 0;
 	}
 
-#extra_footer {
-	margin-bottom: 20px;
+.footer_wrapper {
+	margin-left: 150px;
+	/*margin-bottom: 20px;*/
 }
 
-#chris {
+.chris {
 	z-index: 5;
-	position: relative;
+	position: absolute;
 	padding: 0;
 	margin: 0;
 	margin-left: -80px;
@@ -267,23 +270,24 @@ span.reset-eggs {
 	background-repeat: no-repeat;
 	width: 210px;
 	height: 178px;
+	bottom: 0;
 }
 
-#chris div.says {
+.chris div.says {
 	display: none;
 	font-size: 12px;
 	padding-top: 20px;
 	padding-left: 80px;
 }
 
-#chris div.quote {
+.chris div.quote {
 	display: none;
 	font-size: 12px;
 	padding-top: 10px;
 	padding-left: 80px;
 	text-align: center;
 }
-#chris div.bye {
+.chris div.bye {
 	display: none;
 	font-size: 12px;
 	padding-top: 10px;

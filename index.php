@@ -88,7 +88,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                         <li><strong>Email</strong>: <a href="mailto:zeph@lafassett.com" >zeph@lafassett.com</a></li>
                     </ul>
                 </div>
-                <div id='chris'>
+                <div class='chris'>
                     <div class='says'><a href='http://en.wikipedia.org/wiki/Chris_Hansen' class='external_link'><strong>Chris Hansen</strong></a> says</div>
                     <div class='quote'></div>
                     <div class='bye'></div>
@@ -144,7 +144,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='duties'>
                         Zeph was responsible for general UI design, server setup, ssl setup.
                     </p>
-                    <h4>tags</h4><span>[</span>
+                    <h4>tags</h4>
                     <ul class="keywords">
                         <li>nodejs</li>
                         <li>ssl</li>
@@ -152,8 +152,6 @@ if(isset($_POST['j']) && $_POST['j']) {
                         <li>fake site</li>
                         <li>does not steal credit card information</li>
                     </ul>
-                    <span>]</span>
-
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
@@ -256,13 +254,14 @@ if(isset($_POST['j']) && $_POST['j']) {
                     </ul>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to the top breh</a></span></h2>
                 </div>
-                <div id='footer'>
-                    <p>
-                        send Zeph an <a href='mailto:zeph@lafassett.com'>email</a> or give him a call (<a href="tel:+19165214784">+1.916.521.4784</a>). I hear he's a really nice <span id='hansen' class='hint'>dude</span>.
-                    </p>
-                </div>
             </div>
         </div>
-        <div id='extra_footer'></div>
+        <div class='footer_wrapper'>
+            <div class='footer'>
+                <p>
+                    send Zeph an <a href='mailto:zeph@lafassett.com'>email</a> or give him a call (<a href="tel:+19165214784">+1.916.521.4784</a>). I hear he's a really nice <span id='hansen' class='hint'>dude</span>.
+                </p>
+            </div>
+        </div>
     </body>
 </html>

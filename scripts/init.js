@@ -188,19 +188,19 @@ $(document).ready(function() {
 
 
     $('#hansen').bind('click', function() {
-        var c = $('#chris');
+        var c = $('.chris');
 
         var close = function() {
             $('.says').fadeOut();
             $('.quote').fadeOut();
             $('.bye').fadeOut();
-            $('#chris').animate({
+            $('.chris').animate({
                 'marginLeft': "-=75px"
             }, 1000);
             updateCounter({'id':'chrish','text':'chris hanson'});
         };
         if(parseInt(c.css('margin-left')) <= -79) {
-            $('#chris').animate({
+            $('.chris').animate({
                 'marginLeft': "+=75px"
             }, 2500);
             $('.says').delay(3000).fadeIn('slow');
