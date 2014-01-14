@@ -128,6 +128,17 @@ if(isset($_POST['j']) && $_POST['j']) {
                         All frontend development and user experience was coded onsite by Zeph.
                         He also managed all web related services and servers.
                     </p>
+                    <h4>tags</h4>
+                    <ul class="keywords">
+                        <li>php</li>
+                        <li>codeigniter</li>
+                        <li>mysql</li>
+                        <li>APC</li>
+                        <li>php-gd</li>
+                        <li>CSS</li>
+                        <li>SEO</li>
+                        <li>awesome jewelry</li>
+                    </ul>
                     <h2> } <span class='small_text no_js'><a href='#'> //to top</a></span>  </h2>
                 </div>
 
@@ -168,6 +179,14 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='duties'>
                         Project Mango is written with the codeigniter framework and uses a MySQL database.
                     </p>
+                    <h4>tags</h4>
+                    <ul class="keywords">
+                        <li>php</li>
+                        <li>codeigniter</li>
+                        <li>mysql</li>
+                        <li>CMS</li>
+                        <li>does not takes like a mango</li>
+                    </ul>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
@@ -187,6 +206,12 @@ if(isset($_POST['j']) && $_POST['j']) {
                             The look and feel, images, and UX was contributed by Chris Contolini.
                         </p>
                     </div>
+                    <h4>tags</h4>
+                    <ul class="keywords">
+                        <li>php</li>
+                        <li>mysql</li>
+                        <li>javascript</li>
+                    </ul>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
@@ -206,6 +231,16 @@ if(isset($_POST['j']) && $_POST['j']) {
                         Zeph was responsible for all backend and frontend development.
                         He utilized the public twitter api to filter and gather each tweet.
                     </p>
+                    <h4>tags</h4>
+                    <ul class="keywords">
+                        <li>php</li>
+                        <li>twitter api</li>
+                        <li>xhr</li>
+                        <li>had ads</li>
+                        <li>time waster</li>
+                        <li>can be offensive</li>
+                    </ul>
+
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
@@ -222,6 +257,15 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='duties'>
                         Zeph was responsible for the database design, UX, frontend and backend development, and that horrible pink background.
                     </p>
+                    <h4>tags</h4>
+                    <ul class="keywords">
+                        <li>php</li>
+                        <li>mysql</li>
+                        <li>sha256</li>
+                        <li>xhr</li>
+                        <li>time waster</li>
+                        <li>does not actually give out a dollar</li>
+                    </ul>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
@@ -233,8 +277,18 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class='description'>Kinky Dollars is an adult entertainment affiliate program for [<span class='nsfw'>nsfw</span>] <a class="external_link" href="http://www.kink.com/">Kink.com</a> </p>
                     <p class="url">[<span class='nsfw'>nsfw</span>] <a href="http://www.kinkydollars.com">http://www.kinkydollars.com/</a></p>
                     <p class='duties'>
-                        Zeph rewrote the entire backend for the affiliate ad tools. Zeph also used the <abbr title="alternitive php caching">APC</abbr> library to help with performance. Zeph was not responsible for the crummy UI.
+                        Zeph rewrote the entire backend for the affiliate ad tools for better performance and site maintainability.
+                        By using the <abbr title="alternitive php caching">APC</abbr> library to help with datbase load and site performance Zeph was able to reduce database load over 10 fold.
+                        Prior to using a caching solution, Kinkydollars database load rose to epic proportions and would often render the tool inoperable.
+                        Zeph was not responsible for the crummy UI.
                     </p>
+                    <h4>tags</h4>
+                    <ul class="keywords">
+                        <li>php</li>
+                        <li>mysql</li>
+                        <li>APC</li>
+                        <li>porn</li>
+                    </ul>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
 
