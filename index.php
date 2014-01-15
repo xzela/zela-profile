@@ -278,7 +278,7 @@ if(isset($_POST['j']) && $_POST['j']) {
                     <p class="url">[<span class='nsfw'>nsfw</span>] <a href="http://www.kinkydollars.com">http://www.kinkydollars.com/</a></p>
                     <p class='duties'>
                         Zeph rewrote the entire backend for the affiliate ad tools for better performance and site maintainability.
-                        By using the <abbr title="alternitive php caching">APC</abbr> library to help with datbase load and site performance Zeph was able to reduce database load over 10 fold.
+                        By using the <abbr title="alternitive php caching">APC</abbr> library to help with database load and site performance Zeph was able to reduce database load over 10 fold.
                         Prior to using a caching solution, Kinkydollars database load rose to epic proportions and would often render the tool inoperable.
                         Zeph was not responsible for the crummy UI.
                     </p>
