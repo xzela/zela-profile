@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flat UI Free</title>
+    <title>Zeph LaFassett is AWESOME!1!!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -10,6 +10,8 @@
 
     <!-- Loading Flat UI -->
     <link href="/css/third-party/flat-ui/flat-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/third-party/font-awesome/font-awesome.min.css">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -21,7 +23,43 @@
   </head>
   <body>
     <div class="container">
-        <h1>hello</h1>
+<!--         <nav class="navbar header" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Me!</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#"><span class="fa fa-star"></span> Mad Skillz</a></li>
+                    <li><a href="#"><span class="fa fa-flask"></span> Projects</a></li>
+                    <li><a href="#"><span class="fa fa-github"></span> Github</a></li>
+                    <li><a href="/about.php"><span class="fa fa-info-circle"></span> About</a></li>
+                    <li><a href="#" class="toggle-cloud"><span class="fa fa-cloud"></span> Turn <span class="status">On</span> Cloud</a></li>
+                </ul>
+            </div>
+        </nav> -->
+         <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Me!</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="fa fa-star"></span> Mad Skillz</a></li>
+                        <li><a href="#"><span class="fa fa-flask"></span> Projects</a></li>
+                        <li><a href="#"><span class="fa fa-github"></span> Github</a></li>
+                        <li><a href="/about.php"><span class="fa fa-info-circle"></span> About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="">Zeph LaFassett</h1>
+
         Start doing your next awesomeness here.
     </div>
     <!-- /.container -->
