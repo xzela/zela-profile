@@ -1,0 +1,38 @@
+body {
+	background-color: #ADADAD;
+}
+.container {
+	background-color: #666;
+}
+.profile-header {
+	background-color: white;
+	padding: 10px;
+	margin: 0;
+	margin-left: 15px;
+	margin-right: -15px;
+}
+.profile-header small {
+	color: #A7AAAF;
+}
+
+.container-project {
+	padding: 15px;
+	margin: 15px;
+	width: 100%;
+	background-color: white;
+}
+.lang {
+	background-color: white;
+}
+
+.lang-img {
+	background-size: 100%;
+	background-size: cover;
+	background-position: center center;
+	vertical-align: top;
+	background-image: url('/images/screenshots/langantiques.png');
+}
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
