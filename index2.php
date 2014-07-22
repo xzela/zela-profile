@@ -118,84 +118,113 @@
                 </div>
             </div>
         </div>
-
-                <div id='projectmango' class='product'>
-                    <h2>Project Mango {</h2>
-                    <div class='screenshot'>
-                        <img src='images/screenshots/project.mango.png' alt='project mango screenshot' />
-                    </div>
+        <div class="container container-project">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Project Mango</h2>
                     <p class='description'>
                         Project Mango is a custom built solution for Lang Antiques.
                         Lang Antiques had become disatisified with their existing inventory management system and commissioned Zeph to build a new one.
                         Project Mango is tightly intergraded with their <a class='local' href='#langantiques'>public facing website,</a> and this helps improve internal workflows and customer relations.
                     </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src='images/screenshots/project.mango.png' alt='project mango screenshot' />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <p class='duties'>
                         Project Mango is written with the codeigniter framework and uses a MySQL database.
                     </p>
                     <h4>tags</h4>
-                    <ul class="keywords">
-                        <li>php</li>
-                        <li>codeigniter</li>
-                        <li>mysql</li>
-                        <li>CMS</li>
-                        <li>does not takes like a mango</li>
-                    </ul>
-                    <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
+                    <div class="keywords">
+                        <span class="label label-default">php</span>
+                        <span class="label label-default">codeigniter</span>
+                        <span class="label label-default">mysql</span>
+                        <span class="label label-default">CMS</span>
+                        <span class="label label-default">does not taste like a mango</span>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <div id='yonoid' class='product'>
-                    <h2>Yo!Noid {</h2>
-                    <div class='screenshot'>
-                        <img src='images/screenshots/yonoid.png' alt='Yo!Noid screenshot' title='click here to start the fun!' />
-                    </div>
-                    <div class='info'>
-                        <p class='description'>
-                            Yo!Noid is a small experimental web project jointly headed by <a href='http://contolini.net/' class='external_link'>Chris Contolini</a> and Zeph.
-                            The site is an experiment in revealing the amount and types of data a browser collects about the user. In addition, it shows how developers can easily access this information.
-                        </p>
-                        <p class='url'><a href='http://yonoid.lafassett.com' class='external_link'>http://yonoid.lafassett.com</a></p>
-                        <p class='duties'>
-                            Zeph was responsible for all backend development which includes: server setup, mail system, database design, backend business logic and a bit of frontend UX.
-                            The look and feel, images, and UX was contributed by Chris Contolini.
-                        </p>
-                    </div>
+        <div class="container container-project">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Yo!Noid</h2>
+                    <p class='url'><a href='http://yonoid.lafassett.com' class='external_link'>http://yonoid.lafassett.com</a></p>
+                    <p class='description'>
+                        Yo!Noid is a small experimental web project jointly headed by <a href='http://contolini.net/' class='external_link'>Chris Contolini</a> and Zeph.
+                        The site is an experiment in revealing the amount and types of data a browser collects about the user. In addition, it shows how developers can easily access this information.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src='images/screenshots/yonoid.png' alt='Yo!Noid screenshot' title='click here to start the fun!' />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class='duties'>
+                        Zeph was responsible for all backend development which includes: server setup, mail system, database design, backend business logic and a bit of frontend UX.
+                        The look and feel, images, and UX was contributed by an outside contractor.
+                    </p>
                     <h4>tags</h4>
-                    <ul class="keywords">
-                        <li>php</li>
-                        <li>mysql</li>
-                        <li>javascript</li>
-                    </ul>
-                    <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
-                </div>
-
-                <div id='deitweet' class='product'>
-                    <h2>Deitweet {</h2>
-                    <div class='screenshot'>
-                        <img src='images/screenshots/deitweet.png' alt='Deitweet screenshot' title='click here to watch the feed!'/>
+                    <div class="keywords">
+                        <span class="label label-default">php</span>
+                        <span class="label label-default">mysql</span>
+                        <span class="label label-default">javascript</span>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-project">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Deitweet</h2>
+                    <p class='url'><a href='http://deitweet.com' class='external_link'>http://deitweet.com</a></p>
                     <p class='description'>
                         Zeph created <a class='external_link' href='http://deitweet.com'>Deitweet.com</a> (dee-i-tweet) as a knee jerk reaction to cursebird.com.
                         Deitweet filters for major deity names, similar to the way cursebird pulls tweets with swear words.
                         Like most of Zeph's side projects, this is simply a fun time waster.
                         Although this site once featured ads, it made no money.
                     </p>
-                    <p class='url'><a href='http://deitweet.com' class='external_link'>http://deitweet.com</a></p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src='images/screenshots/deitweet.png' alt='Deitweet screenshot' title='click here to watch the feed!'/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <p class='duties'>
                         Zeph was responsible for all backend and frontend development.
                         He utilized the public twitter api to filter and gather each tweet.
                     </p>
-                    <h4>tags</h4>
-                    <ul class="keywords">
-                        <li>php</li>
-                        <li>twitter api</li>
-                        <li>xhr</li>
-                        <li>had ads</li>
-                        <li>time waster</li>
-                        <li>can be offensive</li>
-                    </ul>
-
-                    <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
+                    <div class="keywords">
+                        <span class="label label-default">php</span>
+                        <span class="label label-default">twitter api</span>
+                        <span class="label label-default">>xhr</span>
+                        <span class="label label-default">had ads</span>
+                        <span class="label label-default">time waster</span>
+                        <span class="label label-default">can be offensive</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="container container-project">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+        </div>
 
                 <div id='winadollar' class='product'>
                     <h2>Win A Dollar! {</h2>
@@ -221,6 +250,18 @@
                     </ul>
                     <h2>}  <span class='small_text no_js'><a href='#'> //to top</a></span></h2>
                 </div>
+        <div class="container container-project">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+        </div>
 
                 <div id='kinkydollars' class='product'>
                     <h2>Kinky Dollars {</h2>
