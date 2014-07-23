@@ -1,38 +1,30 @@
-body {
-	background-color: #ADADAD;
+section {
+	border-bottom: 1px solid #707074;
+	margin-bottom: 2em;
 }
-.container {
-	background-color: #666;
+section:last-child {
+	border-bottom: 0;
 }
-.profile-header {
-	background-color: white;
-	padding: 10px;
-	margin: 0;
-	margin-left: 15px;
-	margin-right: -15px;
+.tags span {
+	padding: .1em;
+	margin: .1em;
+	margin-top: .3em;
+	margin-bottom: .3em;
+	background-color: #707074;
+	border-radius: 5px;
 }
-.profile-header small {
-	color: #A7AAAF;
+.screenshot {
+	float: left;
+	clear: none;
+}
+.img-responsive {
+	max-width: 100%;
+}
+.nsfw {
+	color: red;
+	font-weight: bold;
 }
 
-.container-project {
-	padding: 15px;
-	margin: 15px;
-	width: 100%;
-	background-color: white;
-}
-.lang {
-	background-color: white;
-}
-
-.lang-img {
-	background-size: 100%;
-	background-size: cover;
-	background-position: center center;
-	vertical-align: top;
-	background-image: url('/images/screenshots/langantiques.png');
-}
-.navbar {
-	margin-bottom: 0;
-	border-radius: 0;
+.page-inner h2 {
+	margin-bottom: .5em;
 }
