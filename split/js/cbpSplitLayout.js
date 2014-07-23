@@ -49,7 +49,6 @@
 		});
 
 		rightSide.querySelector('div.intro-content').addEventListener(eventtype, function (ev) {
-			window.location = "https://github.com/xzela";
 			// reset();
 			// classie.add( splitlayout, 'open-right' );
 		});
