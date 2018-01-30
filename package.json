@@ -14,7 +14,7 @@
     "profile"
   ],
   "author": "Zeph LaFassett <zeph@lafassett.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/xzela/zela-profile/issues"
   },
