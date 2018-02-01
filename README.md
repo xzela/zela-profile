@@ -2,7 +2,6 @@
 
 my personal profile site
 
-
 ## Install
 ```sh
 npm install

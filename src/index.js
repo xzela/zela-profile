@@ -1,79 +1,118 @@
 'use strict';
 
-window.onload = function() {
-	//canvas init
-	var canvas = document.getElementById("canvas");
-	var ctx = canvas.getContext("2d");
+const MAX_PARTICLES = 30;
+let ANGLE = 0;
 
-	//canvas dimensions
-	var W = window.innerWidth;
-	var H = window.innerHeight;
-	console.log(H);
-	canvas.width = W;
-	canvas.height = H;
+/**
+ * Generates a random number between a range of numbers
+ *
+ * @param  {number} min  minimum value
+ * @param  {number} max  maximum value
+ *
+ * @return {number} A random number
+ */
+function range(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-	//snowflake particles
-	var mp = 25; //max particles
-	var particles = [];
-	for(var i = 0; i < mp; i++) {
+/**
+ * Generates an array of particles in near random coordinates and sizes
+ *
+ * @param  {number} width   the maximum width of the canvas
+ * @param  {number} height  the maximum height of the canvas
+ *
+ * @return {Array<Object>} An array of particle objects
+ */
+function generateParticles(width, height) {
+	let particles = [];
+	for (let i = 0; i <= MAX_PARTICLES; i++) {
 		particles.push({
-			x: Math.random()*W, //x-coordinate
-			y: Math.random()*H, //y-coordinate
-			r: Math.random()*10, //radius
-			d: Math.random()*mp //density
-		})
+			id: i,
+			// x-coordinate
+			x: range(0, width),
+			// y-coordinate
+			y: range(0, height),
+			// particle radius
+			r: range(1, 8),
+			// density
+			d: range(0, MAX_PARTICLES) // density
+		});
 	}
+	return particles;
+}
 
-	//Lets draw the flakes
-	function draw() {
-		ctx.clearRect(0, 0, W, H);
+/**
+ * draws the particles to the canvas
+ *
+ * @param  {Object} context    canvas context
+ * @param  {Array} particles   array of particles
+ * @param  {number} width      width of the canvas
+ * @param  {number} height     height of the canvas
+ *
+ * @return {undefined}
+ */
+function draw(context, particles, width, height) {
+	context.clearRect(0, 0, width, height);
+	context.fillStyle = "rgba(50, 50, 50, 0.6)";
+	context.beginPath();
+	particles.forEach(particle => {
+		context.moveTo(particle.x, particle.y);
+		context.fillRect(particle.x, particle.y, particle.r, particle.r);
+	});
+	context.fill();
+	update(particles, width, height);
+}
 
-		ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
-		ctx.beginPath();
-		for(var i = 0; i < mp; i++) {
-			var p = particles[i];
-			ctx.moveTo(p.x, p.y);
-			// ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
-			ctx.fillRect(p.x, p.y, p.r, p.r);
+/**
+ * Updates each particle to change their x,y coordinates
+ *
+ * @param  {Array} particles  array of particles
+ * @param  {number} width     width of canvas
+ * @param  {number} height    height of canvas
+ *
+ * @return {undefined}
+ */
+function update(particles, width, height) {
+	particles.forEach((particle, indx) => {
+		ANGLE += 0.0001;
+
+		particle.y += -1 * (Math.cos(ANGLE + particle.d) + 2 + particle.r / 2);
+		particle.x += Math.sin(ANGLE) * 3;
+
+		// "regenerate" the particle, basically resets the particle x,y coordinates
+		if (particle.y <= -10) {
+			particle.x = range(0, width);
+			particle.y = height;
 		}
-		ctx.fill();
-		update();
-	}
 
-	//Function to move the snowflakes
-	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
-	var angle = 0;
-	function update() {
-		angle += 0.01;
-		for(var i = 0; i < mp; i++) {
-			var p = particles[i];
-			//Updating X and Y coordinates
-			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
-			//Every particle has its own density which can be used to make the downward movement different for each flake
-			//Lets make it more random by adding in the radius
-			p.y += -1 * (Math.cos(angle+p.d) + 2 + p.r / 2);
-			p.x += Math.sin(angle) * 2;
-
-			//Sending flakes back from the top when it exits
-			//Lets make it a bit more organic and let flakes enter from the left and right also.
-			if(p.x > W + 5 || p.x < -5 || p.y <= 0) {
-				if(i % 3 > 0) { //66.67% of the flakes
-					particles[i] = {x: Math.random()*W, y: H, r: p.r, d: p.d};
-				}
-				else {
-					//If the flake is exitting from the right
-					if(Math.sin(angle) > 0) {
-						//Enter from the left
-						particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
-					}
-					else {
-						//Enter from the right
-						particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
-					}
-				}
-			}
+		// wrapping from left to right
+		if (particle.x < -10) {
+			particle.x = width;
 		}
-	}
-	//animation loop
-	setInterval(draw, 33);
+
+		// wrapping from right to left
+		if (particle.x > width + 10) {
+			particle.x = 0;
+		}
+	});
+}
+
+window.onload = function _onload() {
+	// canvas initialization
+	const canvas = document.getElementById("canvas");
+	const context = canvas.getContext("2d");
+
+	// canvas dimensions
+	const WIDTH = window.innerWidth;
+	const HEIGHT = window.innerHeight;
+
+	canvas.width = WIDTH;
+	canvas.height = HEIGHT;
+
+	let particles = generateParticles(WIDTH, HEIGHT);
+
+	// animation
+	setInterval(() => {
+		draw(context, particles, WIDTH, HEIGHT);
+	}, 30);
 }
