@@ -9,10 +9,10 @@ npm install
 
 ## Build
 ```sh
-webpack
+npm run build
 ```
 
 ## Run
 ```sh
-php -S localhost:9000 -t build/
+npm start
 ```
