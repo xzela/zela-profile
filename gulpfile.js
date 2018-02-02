@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
 
 gulp.task('minify-css', () => {
 	return gulp.src('src/styles.css')
@@ -11,6 +12,7 @@ gulp.task('minify-css', () => {
 gulp.task('babel-js', () => {
 	return gulp.src('src/**/*.js')
 		.pipe(babel({ presets: ['es2015'] }))
+		.pipe(uglify())
 		.pipe(gulp.dest('build'));
 });
 
