@@ -1,0 +1,33 @@
+{
+  "name": "zela-profile",
+  "version": "2.0.0",
+  "description": "personal profile ",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp ",
+    "start": "php -S localhost:9000 -t build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzela/zela-profile.git"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "author": "Zeph LaFassett <zeph@lafassett.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/xzela/zela-profile/issues"
+  },
+  "homepage": "https://github.com/xzela/zela-profile#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "6.x",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
