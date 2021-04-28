@@ -1,4 +1,8 @@
-'use strict';
+/*
+ global
+ window
+ document
+*/
 
 const MAX_PARTICLES = 30;
 let ANGLE = 0;
@@ -24,7 +28,7 @@ function range(min, max) {
  * @return {Array<Object>} An array of particle objects
  */
 function generateParticles(width, height) {
-	let particles = [];
+	const particles = [];
 	for (let i = 0; i <= MAX_PARTICLES; i++) {
 		particles.push({
 			id: i,
@@ -35,7 +39,7 @@ function generateParticles(width, height) {
 			// particle radius
 			r: range(1, 8),
 			// density
-			d: range(0, MAX_PARTICLES) // density
+			d: range(0, MAX_PARTICLES), // density
 		});
 	}
 	return particles;
@@ -53,7 +57,7 @@ function generateParticles(width, height) {
  */
 function draw(context, particles, width, height) {
 	context.clearRect(0, 0, width, height);
-	context.fillStyle = "rgba(50, 50, 50, 0.6)";
+	context.fillStyle = 'rgba(50, 50, 50, 0.6)';
 	context.beginPath();
 	particles.forEach(particle => {
 		context.moveTo(particle.x, particle.y);
@@ -99,8 +103,8 @@ function update(particles, width, height) {
 
 window.onload = function _onload() {
 	// canvas initialization
-	const canvas = document.getElementById("canvas");
-	const context = canvas.getContext("2d");
+	const canvas = document.getElementById('canvas');
+	const context = canvas.getContext('2d');
 
 	// canvas dimensions
 	const WIDTH = window.innerWidth;
@@ -109,10 +113,10 @@ window.onload = function _onload() {
 	canvas.width = WIDTH;
 	canvas.height = HEIGHT;
 
-	let particles = generateParticles(WIDTH, HEIGHT);
+	const particles = generateParticles(WIDTH, HEIGHT);
 
 	// animation
 	setInterval(() => {
 		draw(context, particles, WIDTH, HEIGHT);
 	}, 30);
-}
+};
